@@ -9,6 +9,8 @@
   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://unpkg.com/framer-motion/dist/framer-motion.umd.js"></script>
+
 
   <style>
     :root {
@@ -173,6 +175,27 @@
       .sidebar .toggle {
         margin: 4px 6px;
       }
+
+      .code-orb {
+  position: fixed;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: radial-gradient(circle at top left, #38bdf8, #1e40af);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-family: monospace;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  cursor: pointer;
+  z-index: 999;
+}
+
     }
   </style>
 </head>
@@ -181,6 +204,7 @@
 
   <script type="text/babel">
     function App() {
+      const { motion } = window["framer-motion"];
       const [light, setLight] = React.useState(false);
 
       React.useEffect(() => {
@@ -204,12 +228,11 @@
             <section id="work">
               <h2>What I Work On</h2>
               <div className="grid">
-                <div className="grid-item">🐍 Python Programming – logic, scripting, automation basics</div>
-                <div className="grid-item">🤖 Robotics – sensors, motors, and control logic</div>
+                <div className="grid-item">🐍 Python Programming – logic, scripting</div>
+                <div className="grid-item">🤖 Robotics – sensors, motors, and control logic theory</div>
                 <div className="grid-item">🌐 Web Development – HTML, CSS, JS Basics</div>
                 <div className="grid-item">🧠 Problem Solving – algorithms and logical thinking</div>
                 <div className="grid-item">📘 Learning AI & ML – beginner concepts</div>
-                <div className="grid-item">🚀 Consistent Skill Growth</div>
               </div>
             </section>
 
@@ -230,8 +253,6 @@
               <h2>Projects & Learning</h2>
               <div className="grid">
                 <div className="grid-item">📂 Python Practice Projects</div>
-                <div className="grid-item">⚙️ Automation Scripts</div>
-                <div className="grid-item">🌱 Beginner Web Projects</div>
                 <div className="grid-item">🧪 Logic & Algorithm Experiments</div>
                 <div className="grid-item">📊 Data Structures (Basics)</div>
                 <div className="grid-item">🔓 Open-source Learning</div>
@@ -274,6 +295,16 @@
               <div className="grid-item"><strong>Goal:</strong> Software & Robotics Engineer</div>
             </div>
           </div>
+          <motion.div
+  className="code-orb"
+  animate={{ rotate: 360 }}
+  transition={{ repeat: Infinity, duration: 6, ease: "linear" }}
+  whileHover={{ scale: 1.15 }}
+  whileTap={{ scale: 0.95 }}
+>
+  {"< />"}
+</motion.div>
+
         </div>
       );
     }
