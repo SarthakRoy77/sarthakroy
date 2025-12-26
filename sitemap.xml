@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://sarthak-roy.vercel.app/</loc>
+    <loc>https://sarthakroy.vercel.app/</loc>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://sarthak-roy.vercel.app/#about</loc>
+    <loc>https://sarthakroy.vercel.app/#about</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://sarthak-roy.vercel.app/#work</loc>
+    <loc>https://sarthakroy.vercel.app/#work</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://sarthak-roy.vercel.app/#projects</loc>
+    <loc>https://sarthakroy.vercel.app/#projects</loc>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://sarthak-roy.vercel.app/#contact</loc>
+    <loc>https://sarthakroy.vercel.app/#contact</loc>
     <priority>0.6</priority>
   </url>
 
