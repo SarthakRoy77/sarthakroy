@@ -42,7 +42,7 @@
   display: flex;
   align-items: flex-start;
   gap: 24px;   /* controls distance between main card and sidebar */
-  max-width: 1200px; /* optional: keeps layout tighter */
+  max-width: 1400px; /* optional: keeps layout tighter */
   margin: 0 auto;
   padding: 24px;
   box-sizing: border-box;
@@ -57,7 +57,7 @@
       transition: all 0.3s ease;
       width: 100%;
       box-sizing: border-box;
-      max-width: 800px;
+      max-width: 1000px;
     }
 
     body.light .card {
@@ -102,6 +102,20 @@
     body.light .grid-item {
       background: #d4d4d4;
     }
+
+
+    .pGrid-item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      max-width: 80px;
+    }
+
+    body.light .pGrid-item {
+      background: #d4d4d4;
+    }
+
 
     .sidebar {
       display: flex;
@@ -220,8 +234,8 @@
 
             <section id="about">
               <h2>About Me</h2>
-              <p>I am a student at Delhi Public School Patna who is deeply interested in technology and computers. I enjoy learning how software works, how machines think, and how code can be used to solve real problems. I started with Python and slowly expanded my interests into robotics and web development.</p>
-              <p>I believe learning should be practical and curiosity-driven. I like experimenting, fixing errors, and understanding concepts instead of memorizing them. My long-term goal is to become a skilled software and robotics engineer.</p>
+              <p>I am a student at Delhi Public School Patna who is deeply interested in technology and computers. I enjoy learning how software works, how machines think, and how code can be used to solve real problems. I started with Python and slowly expanded my interests into robotics and Javascript development.</p>
+              <p>I believe learning should be practical and curiosity-driven. I like experimenting, fixing errors, and asking a impoertant question 'why'. My long-term goal is to become a skilled software and robotics engineer.</p>
             </section>
             
             <section id="education">
@@ -240,7 +254,7 @@
             <strong>Focus Areas:</strong> Mathematics, Computer Science, Science
           </div>
             <div className="grid-item">
-            <strong>Academics:</strong> Class 5: 97.6% 
+            <strong>Academics:</strong><br></br> Class 5: 98.33%<br></br>Class 6: 98.6%
             </div>
         </div>
         </section>
@@ -248,8 +262,7 @@
             <section id="work">
               <h2>What I Work On</h2>
               <div className="grid">
-                <div className="grid-item">🐍 Python Programming – logic, scripting</div>
-                <div className="grid-item">🤖 Robotics – sensors, motors, and control logic theory</div>
+                <div className="grid-item">🐍 Python Programming – AI Related concepts - NN, CNN and basic functionality</div>
                 <div className="grid-item">🌐 Web Development – HTML, CSS, JS Basics</div>
                 <div className="grid-item">🧠 Problem Solving – algorithms and logical thinking</div>
                 <div className="grid-item">📘 Learning AI & ML – beginner concepts</div>
@@ -273,9 +286,8 @@
               <h2>Projects & Learning</h2>
               <div className="grid">
                 <div className="grid-item">📂 Python Practice Projects</div>
-                <div className="grid-item">🧪 Logic & Algorithm Experiments</div>
-                <div className="grid-item">📊 Data Structures (Basics)</div>
-                <div className="grid-item">🔓 Open-source Learning</div>
+                <div className="grid-item">🧪 Logic & Algorithm Experiments [Basics]</div>
+                <div className="grid-item">Javascript Basics [Backend Development will be studied]</div>
               </div>
             </section>
 
@@ -305,13 +317,13 @@
 
             <h2 className="personal-title">Me at a glance</h2>
             <div className="grid">
-              <div className="grid-item"><strong>Name:</strong> Sarthak Roy</div>
-              <div className="grid-item"><strong>Age:</strong> 11</div>
-              <div className="grid-item"><strong>Class:</strong> 6</div>
-              <div className="grid-item"><strong>School:</strong> Delhi Public School Patna</div>
-              <div className="grid-item"><strong>Skills:</strong> Python, HTML, CSS, JS </div>
-              <div className="grid-item"><strong>Interests:</strong> Robotics, Football, Anime</div>
-              <div className="grid-item"><strong>Goal:</strong> Software & Robotics Engineer</div>
+              <div className="pGrid-item"><strong>Name:</strong> Sarthak Roy</div>
+              <div className="pGrid-item"><strong>Age:</strong> 12</div>
+              <div className="pGrid-item"><strong>Class:</strong> 7</div>
+              <div className="pGrid-item"><strong>School:</strong> Delhi Public School Patna</div>
+              <div className="pGrid-item"><strong>Skills:</strong> Python, HTML, CSS, JS </div>
+              <div className="pGrid-item"><strong>Interests:</strong> Robotics, Football, Anime</div>
+              <div className="pGrid-item"><strong>Goal:</strong> Software & Robotics Engineer</div>
             </div>
           </div>
         </div>
